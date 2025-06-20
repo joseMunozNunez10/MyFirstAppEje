@@ -23,14 +23,12 @@ class MenuActivity : AppCompatActivity() {
         val btnIMCApp = findViewById<Button>(R.id.btnIMCApp)
 
 
-        btnSaludarApp.setOnLongClickListener {
+        btnSaludarApp.setOnClickListener {
             navigateToSaludarApp()
-            true
         }
 
         btnIMCApp.setOnClickListener {
             navigateToCalculatorIMCApp()
-            true
         }
 
     }
