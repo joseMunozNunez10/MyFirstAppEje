@@ -9,6 +9,7 @@
     <color name="Azul_confiable">#2196f3</color>
     <color name="Amarillo_advertencia">#ffc107</color>
     <color name="Rojo_Alerta">#f44336</color>
+    <color name="Naranjo_Alerta">#FF3E00</color>
     <color name="Morado_profesional">#673ab7</color>
 
     // colores de fondos y textos

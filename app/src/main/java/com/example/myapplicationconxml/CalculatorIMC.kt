@@ -19,11 +19,13 @@ class CalculatorIMC : AppCompatActivity() {
 
     private var isMaleSelected: Boolean = true
     private var isFemaleSelected: Boolean = false
-    private var currentWeight: Int = 30
+    private var currentWeight: Int = 70
     private val MIN_WEIGHT: Int = 1
     private val MIN_AGE: Int = 1
     private var currentAge: Int = 18
-    private var currentHeight: Int = 90
+    private var currentHeight: Int = 150
+
+
 
 
     private lateinit var viewMale: CardView
@@ -129,7 +131,7 @@ class CalculatorIMC : AppCompatActivity() {
 
         btnCalculate.setOnClickListener {
             val result =calculateIMC()
-            navigateToResult()
+            navigateToResult(result)
 
         }
 
