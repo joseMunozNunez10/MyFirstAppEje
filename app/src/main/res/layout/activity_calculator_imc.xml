@@ -174,10 +174,11 @@
             </TextView>
 
             <TextView
+                android:id="@+id/tvWeight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="60"
+                tools:text="60"
                 android:textColor="@color/black"
                 android:textSize="40sp"
                 android:textStyle="bold">
@@ -190,18 +191,22 @@
                 android:gravity="center">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnSubtractWeight"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="16dp"
-                    android:layout_marginStart="10dp">
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/outline_check_indeterminate_small_24">
 
 
                 </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnPlusWight"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginEnd="16dp">
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/outline_add_24">
 
                 </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
@@ -244,9 +249,10 @@
             </TextView>
 
             <TextView
+                android:id="@+id/tvAge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10"
+                tools:text="10"
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textSize="40sp"
@@ -260,17 +266,21 @@
                 android:gravity="center">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:id="@+id/btnSubtractAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
+                    android:src="@drawable/outline_check_indeterminate_small_24"
                     android:layout_marginStart="10dp">
 
 
                 </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:id="@+id/btnPlusAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/outline_add_24"
                     android:layout_marginEnd="16dp">
 
                 </com.google.android.material.floatingactionbutton.FloatingActionButton>
@@ -284,6 +294,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
+        android:id="@+id/btnCalculate"
         android:layout_width="350dp"
         android:layout_height="71dp"
         android:layout_marginTop="40dp"
