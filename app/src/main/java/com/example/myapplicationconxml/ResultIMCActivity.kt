@@ -9,6 +9,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapplicationconxml.CalculatorIMC.Companion.IMC_KEY
+import java.text.DecimalFormat
 
 class ResultIMCActivity : AppCompatActivity() {
 
@@ -38,35 +39,31 @@ class ResultIMCActivity : AppCompatActivity() {
     }
 
     private fun initUI(result: Double) {
-        tvIMC.text = "%.2f".format(result)
-        when(result){
-            in 0.00..18.50->{
+        val df = DecimalFormat("#.##")
+        tvIMC.text = df.format(result)
+
+        when {
+            result < 18.5 -> {
                 tvResult.text = getString(R.string.bajo_peso)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.Amarillo_advertencia))
                 tvDescription.text = getString(R.string.description_bajo_peso)
             }
-            in 18.51..24.99->{
+            result < 25 -> {
                 tvResult.text = getString(R.string.Peso_Normal)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.Verde_Saludable))
                 tvDescription.text = getString(R.string.description_peso_normal)
             }
-            in 25.00..29.99->{
+            result < 30 -> {
                 tvResult.text = getString(R.string.sobre_peso)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.Naranjo_Alerta))
                 tvDescription.text = getString(R.string.description_sobre_peso)
             }
-            in 30.00..99.00 -> {
+            else -> {
                 tvResult.text = getString(R.string.obesidad)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.Rojo_Alerta))
                 tvDescription.text = getString(R.string.description_obesidad)
             }
-            else -> {
-                tvResult.text = getString(R.string.error)
-                tvIMC.text =  getString(R.string.error)
-                tvDescription.text =  getString(R.string.error)
-            }
         }
-
     }
 
     private fun initComponent() {

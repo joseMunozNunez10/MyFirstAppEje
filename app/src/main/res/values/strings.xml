@@ -9,6 +9,10 @@
     <string name="result">Tu Resultado</string>
     <string name="reCalculater">Re-Calcular</string>
     <string name="error">Error</string>
+    <string name="btnSaludarApp">Saludar App</string>
+    <string name="btnCalculaterIMC">Calculadora IMC</string>
+    <string name="btnToDo">To Do</string>
+    <string name="titleMenu">Elige tu App</string>
 
     <string name="bajo_peso">Bajo Peso</string>
     <string name="description_bajo_peso">Estas por debajo de tu peso optimo segun tu peso y altura,</string>

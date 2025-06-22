@@ -144,9 +144,8 @@ class CalculatorIMC : AppCompatActivity() {
     }
 
     private fun calculateIMC(): Double {
-        val df = DecimalFormat("#.##")
-        val imc = currentHeight / (currentHeight.toDouble() / 100 * currentHeight.toDouble() / 100)
-        return df.format(imc).toDouble()
+        val heightInMeters = currentHeight / 100.0 // Convertir cm a metros
+        return currentWeight / (heightInMeters * heightInMeters) // Peso(kg) / (altura(m)^2)
     }
 
     private fun setWeight() {
