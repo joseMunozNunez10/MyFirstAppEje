@@ -7,14 +7,36 @@
     android:layout_height="match_parent"
     tools:context=".ToDoActivity"
     android:orientation="vertical"
-    android:background="@color/background_app">
+    android:background="@color/todo_background_app">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hola esta es una prueba"
-        android:textColor="@color/white">
+        android:text="@string/titleTODO"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_marginVertical="44dp"
+        android:layout_marginHorizontal="35dp"
+        android:textStyle="bold"
+        android:textAllCaps="true">
 
     </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category"
+        android:textColor="@color/todo_subtitle_text"
+        android:textAllCaps="true"
+        android:layout_marginHorizontal="35dp">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

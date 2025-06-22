@@ -18,15 +18,15 @@
 
     //colores para TODOApp Paleta Principal:
 
-    <color name="background_card">#ff081a4a</color>
-    <color name="background_disable">#787878</color>
-    <color name="background_app">#ff2d4993</color>
-    <color name="subtitle_text">#959595</color>
-    <color name="accent">#e91e63</color>
+    <color name="todo_background_card">#ff081a4a</color>
+    <color name="todo_background_disable">#787878</color>
+    <color name="todo_background_app">#ff2d4993</color>
+    <color name="todo_subtitle_text">#959595</color>
+    <color name="todo_accent">#e91e63</color>
 
-    <color name="business_categoty">#ff9800</color>
-    <color name="personal_category">#00bcd4</color>
-    <color name="other_category">#4CAF50</color>
+    <color name="todo_business_categoty">#ff9800</color>
+    <color name="todo_personal_category">#00bcd4</color>
+    <color name="todo_other_category">#4CAF50</color>
 
 
 

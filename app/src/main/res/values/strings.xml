@@ -1,8 +1,11 @@
 <resources>
+    // String de SaludarApp
     <string name="app_name">My ApplicationCon Xml</string>
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
     <string name="height">Altura</string>
+
+    // String de IMC APP
     <string name="edad">Edad</string>
     <string name="peso">Peso KG</string>
     <string name="calculater">Calcular</string>
@@ -25,4 +28,9 @@
 
     <string name="obesidad">Obesidad</string>
     <string name="description_obesidad">Estas excedido de tu peso optimo segun tu peso y altura,</string>
+
+    //String de TODOApp
+    <string name="titleTODO">Bienvenido Jose Muñoz</string>
+    <string name="category">Categoria:</string>
+
 </resources>
